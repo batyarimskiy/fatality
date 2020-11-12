@@ -3,6 +3,9 @@ import requests, random, datetime, sys, time, os
 from colorama import Fore, Back, Style
 from termcolor import colored
 
+c = 'clear'
+os.system(c)
+
 banner = colored("""
    ████             ██              ██ ██   ██
   ░██░             ░██             ░██░░   ░██    ██   ██
@@ -17,7 +20,7 @@ banner = colored("""
 """, "red")
 
 print(banner)
-_phone = input('Привет боец! Введите номер для атаки + ')
+_phone = input('Привет боец! Введите номер для атаки +')
 if _phone[0] == '+':
 	_phone = _phone[1:]
 if _phone[0] == '8':
